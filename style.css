@@ -119,21 +119,17 @@ header nav ul li a:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     filter: brightness(0.9);
 }
-
+/*Estudios */
 .estudios-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
     background: #ffffff;
-    /* Fondo blanco para la tabla */
     color: #333333;
-    /* Texto oscuro para contraste */
     border-radius: 8px;
-    /* Bordes redondeados */
     overflow: hidden;
-    /* Evita desbordes en los bordes */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    /* Sombra sutil para dar profundidad */
+  
 }
 
 .estudios-table th,
@@ -141,32 +137,24 @@ header nav ul li a:hover {
     padding: 12px 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-    
-    /* Borde gris claro */
 }
 
 .estudios-table th {
     background: #f1f1f1;
-    /* Fondo gris claro para los encabezados */
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #333333;
-    
-    /* Color del texto en los encabezados */
 }
 
 .estudios-table tr:nth-child(even) {
     background: #fafafa;
-    /* Color gris claro para las filas pares */
 }
 
 .estudios-table tr:hover {
     background: #e0e0e0;
-    /* Color gris más oscuro al pasar el cursor */
     transition: background 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    /* Agrega sombra sutil al pasar el cursor */
 }
 
 .estudios-table td {
@@ -175,12 +163,10 @@ header nav ul li a:hover {
 
 .estudios-table tr:first-child {
     border-top: 2px solid #ddd;
-    /* Borde superior más grueso */
 }
 
 .estudios-table tr:last-child {
     border-bottom: 2px solid #ddd;
-    /* Borde inferior más grueso */
 }
 
 /* Proyectos */
@@ -207,24 +193,24 @@ header nav ul li a:hover {
 
 @media screen and (max-width: 768px) {
     header nav ul {
-        display: none; /* Oculto por defecto */
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 183px; /* Aumenta este valor para que comience más abajo */
-        left: 50%; /* Centra el menú horizontalmente */
-        transform: translateX(-50%); /* Ajusta el desplazamiento */
-        width: 90%; /* Ajusta el ancho del menú */
-        background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro */
+        top: 183px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        background-color: rgba(0, 0, 0, 0.9); 
         padding: 10px;
-        z-index: 999; /* Asegura que quede sobre otros elementos */
-        transition: top 0.3s ease-in-out; /* Suaviza el movimiento del menú */
+        z-index: 999; 
+        transition: top 0.3s ease-in-out; 
     }
 
     nav ul.show {
-        display: flex; /* Mostrar opciones cuando se active */
+        display: flex; 
     }
 
-    /* Para centrar el texto en el menú */
+
     nav ul li {
         text-align: center;
     }
@@ -232,12 +218,12 @@ header nav ul li a:hover {
 
 
     .menu {
-        display: block; /* Visible solo en móviles */
+        display: block; 
         width: 30px;
         height: 30px;
-        background-color: #1b1919; /* Fondo del botón */
-        position: relative; /* Para posicionar líneas dentro */
-        cursor: pointer; /* Indicador de clic */
+        background-color: #1b1919; 
+        position: relative;
+        cursor: pointer; 
     }
 
     /* Líneas del menú hamburguesa */
@@ -247,8 +233,8 @@ header nav ul li a:hover {
         content: '';
         display: block;
         width: 100%;
-        height: 3px; /* Grosor de las líneas */
-        background-color: #fff; /* Color de las líneas */
+        height: 3px; 
+        background-color: #fff; 
         position: absolute;
         left: 0;
         transition: transform 0.3s ease, top 0.3s ease;
@@ -271,17 +257,17 @@ header nav ul li a:hover {
 
     /* Animación cuando el menú está activo */
     .menu.active::before {
-        transform: rotate(45deg); /* Rotar hacia la derecha */
-        top: 13px; /* Reposicionar al centro */
+        transform: rotate(45deg); 
+        top: 13px; 
     }
 
     .menu.active span {
-        display: none; /* Oculta la línea del medio */
+        display: none; 
     }
 
     .menu.active::after {
-        transform: rotate(-45deg); /* Rotar hacia la izquierda */
-        top: 13px; /* Reposicionar al centro */
+        transform: rotate(-45deg); 
+        top: 13px; 
     }
 
     .about-content {
@@ -298,12 +284,12 @@ header nav ul li a:hover {
     }
 
     .estudios-table {
-        font-size: 14px; /* Texto más pequeño en pantallas pequeñas */
+        font-size: 14px; 
     }
 
     .estudios-table th,
     .estudios-table td {
-        padding: 10px; /* Menos espacio en pantallas pequeñas */
+        padding: 10px; 
     }
 }
     @keyframes gradientAnimation {
